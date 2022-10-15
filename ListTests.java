@@ -5,7 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ListTests {
-	@Test 
+	/*
+  @Test 
 	public void testFilter() {
     List<String> input1 = new ArrayList<>();
     input1.add("apple");
@@ -19,16 +20,29 @@ public class ListTests {
     input1.add("banana");
     input1.add("grape");
 
-    ArrayExamples.reverseInPlace(input1);
+    ListExamples.filter(input1, );
     assertArrayEquals(expected, input1);
   }
+  */
 
-  /*
   @Test 
 	public void testMerge() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
+    List<String> input1 = new ArrayList<>();
+    input1.add("apple");
+    input1.add("banana");
+
+    List<String> input2 = new ArrayList<>();
+    input2.add("apricot");
+    input2.add("orange");
+    input2.add("grape");
+
+    List<String> expected = new ArrayList<>();
+    expected.add("apple");
+    expected.add("apricot");
+    expected.add("banana");
+    expected.add("orange");
+    expected.add("grape");
+    
+    assertEquals(expected, ListExamples.merge(input1, input2));
   }
-  */
 }

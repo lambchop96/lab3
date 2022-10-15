@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+  import java.util.ArrayList;
+  import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
@@ -19,7 +19,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
 
     for(String s: list) {
-      if(myChecker.checkString(s)) {
+      if(sc.checkString(s)) {
         result.add(0, s);
       }
     }
@@ -48,7 +48,7 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      index1 += 1;
+      index2 += 1;
     }
     return result;
   }
